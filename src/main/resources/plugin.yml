@@ -1,0 +1,21 @@
+name: Items
+version: 1.0.0
+main: me.erichards.items.Items
+description: Item management plugin.
+api-version: '1.19'
+depend: [PluginAPI]
+
+commands:
+  items:
+    description: Items management command.
+    usage: /items
+    aliases: [im]
+  category:
+    description: Item category management command.
+    usage: /category
+    aliases: [categories]
+
+permissions:
+  items.admin:
+    description: Allows access to items management.
+    default: op

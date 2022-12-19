@@ -1,0 +1,5 @@
+# Items Configuration
+categories:
+  misc:
+    name: '&7Miscellaneous'
+    item: 'PAPER'
