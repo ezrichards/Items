@@ -4,7 +4,7 @@ import me.erichards.items.Items;
 import me.erichards.items.gui.CategoryGUI;
 import me.erichards.items.gui.ItemsGUI;
 import me.erichards.items.item.Item;
-import me.erichards.items.utils.FileManager;
+import me.erichards.pluginapi.file.FileManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

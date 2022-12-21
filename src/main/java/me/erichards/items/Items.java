@@ -6,7 +6,7 @@ import me.erichards.items.item.Category;
 import me.erichards.items.item.CategoryManager;
 import me.erichards.items.item.Item;
 import me.erichards.items.item.ItemManager;
-import me.erichards.items.utils.FileManager;
+import me.erichards.pluginapi.file.FileManager;
 import me.erichards.pluginapi.gui.GUIListener;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
@@ -27,6 +27,7 @@ public class Items extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        FileManager.init("Items");
         ConfigurationSerialization.registerClass(Category.class);
         ConfigurationSerialization.registerClass(Item.class);
         saveDefaultConfig();
